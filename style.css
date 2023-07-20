@@ -31,7 +31,37 @@ body * {
 #profile p {
   margin-top: 8px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 24px 0;
+}
+
+
+#social-links{
+  display: flex;
+  justify-content: center;
+
+  padding: 24px 0;
+
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+footer{
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
 }
 
 /* Links */
@@ -59,4 +89,15 @@ ul li a{
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+  
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid white;
+
 }
